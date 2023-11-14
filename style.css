@@ -1,3 +1,110 @@
+:root {
+  /* Primary */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* Secondary */
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+/* CSS Reset */
+/* -------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Styling */
+/* -------------- */
 body {
   font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.522px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.12px;
+  color: var(--Grayish-Blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+.fs-28px {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.457px;
+}
+
+.fs-24px {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.391px;
+}
+
+.footer__links a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.135px;
+}
+
+h1,
+.fs-28px,
+.fs-24px {
+  color: var(--Dark-Grayish-Blue);
 }
