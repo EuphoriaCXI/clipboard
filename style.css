@@ -171,7 +171,6 @@ a {
 
 /* Storage details (MOBILE) */
 /* -------------- */
-/* Placeholder */
 .storage__wrapper {
   margin-top: 10rem;
 }
@@ -213,12 +212,113 @@ a {
   letter-spacing: 0.135px;
 }
 
+/* Workflow (MOBILE) */
+.workflow__wrapper-text h2 {
+  margin-top: 8.125rem;
+}
+
+.workflow__wrapper-text p {
+  margin-top: 0.688rem;
+}
+
+.benefit__group {
+  margin-top: 8.25rem;
+}
+
+.benefit__group:nth-of-type(1) {
+  margin-top: 10.625rem;
+}
+
+.benefit__group h2 {
+  position: relative;
+}
+
+.benefit__group p {
+  margin-top: 1.1rem;
+}
+
+.benefit__group h2::before {
+  content: "";
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 40px;
+  background-image: url(/images/icon-blacklist.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.benefit__group:nth-of-type(2) h2::before {
+  width: 36px;
+  height: 32px;
+  background-image: url(/images/icon-text.svg);
+}
+
+.benefit__group:nth-of-type(3) h2::before {
+  width: 49.612px;
+  height: 31.893px;
+  background-image: url(/images/icon-preview.svg);
+}
+
+/* Sponsors (MOBILE) */
+/* -------------- */
+.sponsor__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 57px;
+  margin-top: 8.225rem;
+}
+
+/* Apple (MOBILE) */
+/* -------------- */
+.apple__wrapper {
+  margin-top: 10.625rem;
+}
+
+.apple__wrapper-text p {
+  margin-top: 1.1rem;
+}
+
 /* Footer (MOBILE) */
 /* -------------- */
+.footer__container {
+  background-color: rgba(158, 171, 178, 0.1002);
+}
+
+.footer__wrapper {
+  margin-top: 10.65rem;
+}
+
+.footer__wrapper img {
+  padding: 3.25rem 10.313rem 2.5rem;
+}
+
+.page__links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.page__links ul li a {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.social__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.141rem 6.938rem 3.188rem;
+}
 
 /* Media Query (TABLET) */
 /* -------------- */
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 817px) {
   /* Header (DESKTOP) */
   .logo__wrapper-mobile a::after {
     background-image: url(/images/bg-header-desktop.png);
@@ -239,7 +339,7 @@ a {
     padding: 0 10rem;
   }
 
-  /* Benefit using Clipboard (DESKTOP) */
+  /* Benefit using Clipboard (TABLET) */
   .benefit__wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -247,12 +347,7 @@ a {
     margin-left: -29px;
   }
 
-  .benefit__wrapper img {
-    grid-column: 1;
-  }
-
   .benefit__wrapper-text-group {
-    grid-column: 2;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -277,6 +372,19 @@ a {
   .benefit__wrapper-text:nth-of-type(3) {
     margin-top: 23px;
   }
+
+  /* Benefit (TABLET) */
+  .workflow__wrapper-benefit {
+    display: flex;
+    justify-content: center;
+    padding: 0 165px;
+    gap: 30px;
+    margin-top: 1rem;
+  }
+
+  .benefit__group:nth-of-type(1) {
+    margin-top: 8.275rem;
+  }
 }
 
 /* Media Query (DESKTOP) */
@@ -286,15 +394,22 @@ a {
     padding: 0;
   }
 
-  h2 {
+  .primary-h2 {
     font-size: 2.25rem;
     letter-spacing: -0.587px;
   }
 
   /* Hero (DESKTOP) */
+  .hero__wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero__wrapper-mobile p {
     font-size: 1.25rem;
     letter-spacing: 0.15px;
+    width: 730px;
   }
 
   .hero__wrapper-mobile h1 {
@@ -312,5 +427,26 @@ a {
     font-size: 1.1rem;
     letter-spacing: 0.135px;
     margin-top: 1.1rem;
+  }
+
+  /* Devices (DESKTOP) */
+  .devices__wrapper-text p {
+    width: 730px;
+  }
+
+  .devices__wrapper img {
+    margin-top: 6.9rem;
+  }
+
+  /* Workflow (DESKTOP) */
+  .workflow__wrapper-text p {
+    font-size: 1.1rem;
+    letter-spacing: 0.135px;
+    margin-top: 1.1rem;
+  }
+
+  /* Benefit (DESKTOP) */
+  .benefit__group p {
+    width: 350px;
   }
 }
